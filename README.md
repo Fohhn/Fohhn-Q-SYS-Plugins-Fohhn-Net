@@ -52,4 +52,4 @@ AM-4.4, LX-10 ASX, LX-20 ASX, LX-60 ASX,
 AS-06 ASX, AS-10 ASX, AS-22 ASX, AAX-2.300
 
 ## License
-Fohhn-Net-Device-Plugin.qplug licensed under the [MIT License](https://opensource.org/licenses/MIT), see [LICENSE](LICENSE) for more information.
+Fohhn-Net-Node-Plugin.qplug and Fohhn-Net-Device-Plugin.qplug are licensed under the [MIT License](https://opensource.org/licenses/MIT), see [LICENSE](LICENSE) for more information.
