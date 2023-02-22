@@ -1,8 +1,6 @@
 # Fohhn Q-SYS Plugin Fohhn-Net
 Fohhn-Net Plugins for Q-SYS.
 
-Tested with Q-SYS Designer 9.3.1
-
 ## Table of contents
 - [Fohhn Q-SYS Plugin Fohhn-Net](#fohhn-q-sys-plugin-fohhn-net)
 	- [Table of contents](#table-of-contents)
@@ -17,6 +15,8 @@ Tested with Q-SYS Designer 9.3.1
 2. Drag Fohhn plugins from plugins to your project
 3. Configure IP address in Fohhn-Net Node Plugin
 4. Configure Fohhn-Net IDs in Fohhn-Net Device Plugins
+
+Tested with Q-SYS Designer 9.3.1
 
 ## Fohhn-Net-Node-Plugin.qplug
 
