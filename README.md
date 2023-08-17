@@ -24,7 +24,7 @@ Tested with Q-SYS Designer 9.3.1
 
 **Compatible with:** 
 
-NA-4, ABX-6
+NA-4, ABX-6 and X-16 Fohhn-Net Output
 
 ## Fohhn-Net-Device-Plugin.qplug
 **Functions:** Protect monitoring, Volume Control, Mute, Presets and Standby
