@@ -1,12 +1,12 @@
 -- Fohhn-Net Device Dante Plugin
 -- by Fohhn Audio AG
--- February 2023
+-- June 2024
 -- licensed under the MIT License, see LICENSE for more information
 -- Read README.md before use
 
 PluginInfo = {
   Name = "Fohhn~Fohhn-Net Device Plugin",
-  Version = "0.6",
+  Version = "0.7",
   Id = "c75c4471-2479-4e68-b4f6-041db179f26e",
   Author = "Fohhn",
   Description = "Plugin for Fohhn-Net Devices"
@@ -409,6 +409,7 @@ if Controls then
     end   
   end
 
+  DeviceName = Properties["Model"].Value
   Id = Properties["Fohhn-Net ID"].Value
   SerialPort = SerialPorts[1] 
   Config(Properties)
@@ -748,8 +749,8 @@ if Controls then
       return
     else
       if online == false then
-	debug_info("device is online")
-	Log.Message("device is online")
+	debug_info("device (" .. DeviceName .. ", ID " .. Id .. ") is online")
+	Log.Message("device (" .. DeviceName .. ", ID " .. Id .. ") is online")
       end
       online = true
       Controls.Online.Value = true
@@ -817,4 +818,3 @@ if Controls then
 
   Timer.CallAfter(OpenSerialPort, 1)
 end
-
