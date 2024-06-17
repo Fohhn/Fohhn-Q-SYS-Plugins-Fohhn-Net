@@ -16,6 +16,8 @@ Fohhn-Net Plugins for Q-SYS.
 3. Configure IP address in Fohhn-Net Node Plugin
 4. Configure Fohhn-Net IDs in Fohhn-Net Device Plugins
 
+![image](screenshot.png)
+
 Tested with Q-SYS Designer 9.4.7 LTS
 
 ## Fohhn-Net-Node-Plugin.qplug
