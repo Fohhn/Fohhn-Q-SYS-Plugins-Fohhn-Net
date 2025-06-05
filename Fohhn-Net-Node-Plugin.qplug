@@ -1,21 +1,20 @@
 -- Fohhn-Net Node Plugin
 -- by Fohhn Audio AG
--- June 2024
+-- June 2025
 -- licensed under the MIT License, see LICENSE for more information
 -- Read README.md before use
 
 PluginInfo = {
   Name = "Fohhn~Fohhn-Net Node Plugin",
-  Version = "0.8",
+  Version = "0.9",
   Id = "eebd446b-b227-4c6d-be30-435850c62485",
   Author = "Fohhn",
-  Description = "Plugin for Fohhn NA-4, ABX-6 and X-16 Fohhn-Net Output"
+  Description = "Plugin for Fohhn NA-4 and ABX-6"
 }
 
 FOHHN_DEVICES = { 
   [1] = "NA-4",
-  [2] = "ABX-6",
-  [3] = "X-16",
+  [2] = "ABX-6",  
 }
 
 DeviceCount = 4
@@ -155,9 +154,6 @@ if Controls then
   DeviceName = Properties["Model"].Value
   IPAddress = Properties["IP Address"].Value
   TcpPort = 8374
-  if Properties["Model"].Value== FOHHN_DEVICES[3] then
-    TcpPort = 8375
-  end
   DeviceCount = Properties["Device count"].Value  
 
   DebugPrint = Properties["Debug Print"].Value
