@@ -18,7 +18,7 @@ Fohhn-Net Plugins for Q-SYS.
 
 ![image](screenshot.png)
 
-Tested with Q-SYS Designer 9.4.7 LTS
+Tested with Q-SYS Designer 9.13.1 LTS
 
 ## Fohhn-Net-Node-Plugin.qplug
 
@@ -57,3 +57,4 @@ AS-06 ASX, AS-10 ASX, AS-22 ASX, AAX-2.300
 
 ## License
 Fohhn-Net-Node-Plugin.qplug and Fohhn-Net-Device-Plugin.qplug are licensed under the [MIT License](https://opensource.org/licenses/MIT), see [LICENSE](LICENSE) for more information.
+
