@@ -1,12 +1,12 @@
 -- Fohhn-Net Device Dante Plugin
 -- by Fohhn Audio AG
--- June 2024
+-- July 2025
 -- licensed under the MIT License, see LICENSE for more information
 -- Read README.md before use
 
 PluginInfo = {
   Name = "Fohhn~Fohhn-Net Device Plugin",
-  Version = "0.7",
+  Version = "0.8",
   Id = "c75c4471-2479-4e68-b4f6-041db179f26e",
   Author = "Fohhn",
   Description = "Plugin for Fohhn-Net Devices"
@@ -505,6 +505,7 @@ if Controls then
   busy = false
   delayed = false  
   online = false
+  init = false
   currentData = nil
 
   pollTimer.EventHandler = function()
@@ -526,8 +527,11 @@ if Controls then
     end
 
     wait = false
-    debug_error("timeout timer")
-    Log.Error("timeout")
+    if (online == true) or (init == false) then
+        init = true
+        debug_info("device (" .. DeviceName .. ", ID " .. Id .. ") is offline (node timeout)")
+        Log.Error("device (" .. DeviceName .. ", ID " .. Id .. ") is offline (node timeout)")
+    end
     Controls.Online.Value = false
 
     online = false
@@ -743,6 +747,11 @@ if Controls then
 
     if(rx == "TIMEOUT")then
       wait = false
+      if (online == true) or (init == false) then
+        init = true
+        debug_info("device (" .. DeviceName .. ", ID " .. Id .. ") is offline (RS-485 timeout)")
+        Log.Error("device (" .. DeviceName .. ", ID " .. Id .. ") is offline (RS-485 timeout)")
+      end
       online = false
       Controls.Online.Value = false
       currentData = nil
