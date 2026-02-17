@@ -20,6 +20,8 @@ Fohhn-Net (RS-485) Plugins for Q-SYS.
 
 Tested with Q-SYS Designer 9.13.1 LTS
 
+> If you use Q-SYS Designer 10, open __File > Preferences > General__ and configure the __Asset Directory__ to %HOMEPATH%\Documents\QSC\Q-Sys Designer or the directory that contains the __Plugins__ directory with the *.qplug files.
+
 ## Fohhn-Net-Node-Plugin.qplug
 
 **Functions:** Provides IP communication for Fohhn-Net Device Plugin
@@ -57,5 +59,6 @@ AS-06 ASX, AS-10 ASX, AS-22 ASX, AAX-2.300
 
 ## License
 Fohhn-Net-Node-Plugin.qplug and Fohhn-Net-Device-Plugin.qplug are licensed under the [MIT License](https://opensource.org/licenses/MIT), see [LICENSE](LICENSE) for more information.
+
 
 
